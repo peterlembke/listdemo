@@ -1,0 +1,17 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    # DirectoryIndex index.php
+
+    # You can turn off features here
+    RewriteRule autoload.php - [R=404,L,NC]
+    RewriteRule define_folders.php - [R=404,L,NC]
+
+    ## Every existing file, folder and link should be accessible
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-l
+
+    ### every other url go to index.php
+    RewriteRule  ^(.*)$ index.php?param=$1 [QSA,L]
+
+</IfModule>

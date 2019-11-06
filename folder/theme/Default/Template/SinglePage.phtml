@@ -1,0 +1,52 @@
+<?php
+/**
+ * @category ListDemo
+ * @package ListDemo
+ * @copyright Copyright (c) 2019, Peter Lembke
+ * @author Peter Lembke <peter@teamfakta.se>
+ * @license ListDemo is distributed under the terms of the GNU General Public License
+ * ListDemo is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * ListDemo is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ * You should have received a copy of the GNU General Public License
+ * along with ListDemo.    If not, see <https://www.gnu.org/licenses/>.
+ */
+?>
+<!DOCTYPE HTML>
+<html>
+    <title><?php echo $pageTitle; ?></title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="robots" content="noindex,nofollow,noarchive,nocache,nosnippet,notranslate" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="description" content="<?php echo $pageDescription; ?>" />
+        <meta name="keywords" content="<?php echo $pageKeywords; ?>" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="<?php echo $webAppTitle; ?>">
+        <meta name="allowed-outgoing-urls" content="origin">
+        <link rel="stylesheet" type="text/css" id="global_css" href="data:text/css;base64,<?php echo base64_encode(file_get_contents(THEME . '/Default/Css/global.css')); ?>">
+        <link rel="shortcut icon" id="favicon" href="data:image/png;base64,<?php echo base64_encode(file_get_contents(THEME . '/Default/Asset/favicon.png')); ?>" />
+        <link rel="apple-touch-icon" href="data:image/png;base64,<?php echo base64_encode(file_get_contents(THEME . '/Default/Asset/touchicon.png')); ?>">
+        <link rel="manifest" href="manifest.json">
+    </head>
+    <body style="zoom: 100%;">
+        <noscript>
+            <legend>Information</legend>
+            <br/>
+            This site is built entirely on
+            <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a>.<br/>
+            Your web browser do not allow JavaScript.<br/>
+            If you want to use this site then you can
+            <a href="https://enablejavascript.co/" target="_blank"> enable</a> JavaScript and reload the page.<br/>
+        </noscript>
+
+        <?php require $childPage; ?>
+
+    </body>
+</html>

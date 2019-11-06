@@ -1,0 +1,69 @@
+{
+    "name": "todo",
+    "title": "To do",
+    "database_name": "aktivbo",
+    "table_name": "todo",
+    "id_field_name": "id",
+    "fields": {
+        "id": {
+            "name": "id",
+            "type": "int",
+            "length": 11,
+            "default_value": 0,
+            "index_type": "unique",
+            "description": "Unique identifier for this post",
+            "label": "Todo ID",
+            "form_readonly": true,
+            "form_visible": true,
+            "list_visible": true
+        },
+        "Title": {
+            "name": "Title",
+            "type": "varchar",
+            "length": 50,
+            "default_value": "",
+            "index_type": "normal",
+            "description": "Title of the todo",
+            "label": "Title",
+            "form_readonly": false,
+            "form_visible": true,
+            "list_visible": true
+        },
+        "Category": {
+            "name": "Category",
+            "type": "varchar",
+            "length": 50,
+            "default_value": "Default",
+            "index_type": "normal",
+            "description": "A category name",
+            "label": "Category name",
+            "form_readonly": false,
+            "form_visible": true,
+            "list_visible": true
+        },
+        "Priority": {
+            "name": "Address",
+            "type": "varchar",
+            "length": 2,
+            "default_value": "1",
+            "index_type": "normal",
+            "description": "Priority",
+            "label": "Priority",
+            "form_readonly": false,
+            "form_visible": true,
+            "list_visible": true
+        },
+        "Description": {
+            "name": "Description",
+            "type": "varchar",
+            "length": 255,
+            "default_value": "",
+            "index_type": "normal",
+            "description": "Description of what to do",
+            "label": "Description",
+            "form_readonly": false,
+            "form_visible": true,
+            "list_visible": true
+        }
+    }
+}

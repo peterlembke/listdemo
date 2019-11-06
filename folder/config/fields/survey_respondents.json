@@ -1,0 +1,74 @@
+{
+    "name": "survey_respondents",
+    "title": "Survey respondents",
+    "database_name": "aktivbo",
+    "table_name": "survey_respondents",
+    "id_field_name": "RepondentID",
+    "fields": {
+        "RepondentID": {
+            "name": "RepondentID",
+            "type": "int",
+            "length": 11,
+            "default_value": 0,
+            "index_type": "unique",
+            "description": "Unique identifier for this post",
+            "label": "Respondent ID",
+            "form_readonly": true,
+            "form_visible": true,
+            "list_visible": true
+        },
+        "FirstName": {
+            "name": "FirstName",
+            "type": "varchar",
+            "length": 50,
+            "default_value": "",
+            "index_type": "normal",
+            "description": "Respondent first name",
+            "label": "First name",
+            "form_readonly": false,
+            "form_visible": true,
+            "list_visible": true
+        },
+        "LastName": {
+            "name": "LastName",
+            "type": "varchar",
+            "length": 50,
+            "default_value": "",
+            "index_type": "normal",
+            "description": "Respondent last name",
+            "label": "Last name",
+            "form_readonly": false,
+            "form_visible": true,
+            "list_visible": true
+        },
+        "Address": {
+            "name": "Address",
+            "type": "varchar",
+            "length": 255,
+            "default_value": "",
+            "index_type": "normal",
+            "description": "Respondent address",
+            "label": "Address",
+            "form_readonly": false,
+            "form_visible": true,
+            "list_visible": true
+        },
+        "E-mail": {
+            "name": "E-mail",
+            "type": "varchar",
+            "length": 50,
+            "default_value": "",
+            "index_type": "normal",
+            "description": "Respondent E-mail",
+            "label": "E-mail",
+            "form_readonly": false,
+            "form_visible": true,
+            "list_visible": true
+        }
+    }
+}
+
+
+
+
+

@@ -1,0 +1,7 @@
+{
+    "db_type": "mysql",
+    "db_host": "172.18.0.4",
+    "db_port": "3306",
+    "db_user": "root",
+    "db_password": "topsecret"
+}
