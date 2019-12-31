@@ -166,7 +166,7 @@ function Base() {
     };
 
     /**
-     * View some HTML in the DOM
+     * Update HTML in the DOM
      * @param $id
      * @param $html
      */
@@ -178,7 +178,7 @@ function Base() {
     };
 
     /**
-     * View some HTML in the DOM
+     * Set a form value in a form element
      * @param $id
      * @param $html
      */
@@ -191,7 +191,6 @@ function Base() {
 
     /**
      * Get a value from a form element
-     *
      * @param $id
      * @param $html
      */
@@ -223,6 +222,7 @@ function Base() {
         if ($arguments[0] === $undefined || $arguments[0] === null) {
             return false;
         }
+
         return true;
     };
 
@@ -327,6 +327,17 @@ function Base() {
         }
 
         return objectClone;
+    };
+
+    /**
+     * Get variable data type name in lower case
+     * Example:
+     * @param obj
+     * @returns {string}
+     * @private
+     */
+    var _GetDataType = function (obj) {
+        return ({}).toString.call(obj).match(/\s([a-zA-Z]+)/)[1].toLowerCase();
     };
 
 }

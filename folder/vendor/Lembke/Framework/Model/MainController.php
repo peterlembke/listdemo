@@ -28,7 +28,7 @@ class MainController {
      * There are no support for separate controller actions in this demo.
      *
      * Example: http://local.demo.se/Lembke/ListDemo/View/fieldsName/survey_respondents
-     * Example: http://local.demo.se/Lembke/ListDemo/JsonRequest
+     * Example: http://local.demo.se/Lembke/ListDemo/AjaxRequest
      */
     public function execute() {
         $data = $this->getAllInputData();
@@ -44,7 +44,7 @@ class MainController {
     }
 
     /**
-     * Get all parameters from GET, POST, URL and construct a message to send into infohub
+     * Get all parameters from GET, POST, URL and construct an array with all data
      *
      * @since 2013-05-30
      * @version 2015-03-04

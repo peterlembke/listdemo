@@ -54,7 +54,7 @@ Then sets title, buttons, form fields. You can now use the buttons.
 ## Technology
 The files are placed in a module structure under `folder/vendor`.
 The PHP classes are loaded with an autoloader. Dependency injection is used.
-The `View` folder contain the frontend things like javascript, assets, css, templates. I have used PHP to inject them into the template. Normal is to expose them on the web and download them in separare requests.
+The `View` folder contain the frontend things like javascript, assets, css, templates. I have used PHP to inject them into the template. Normal is to expose them on the web and download them in separate requests.
 
 ### API
 URL: `http://local.listdemo.se/Lembke/ListDemo/AjaxRequest`
